@@ -1,1 +1,1 @@
-# multiarch-gdbserver-9.2-static
+# multiarch-gdbserver-static
