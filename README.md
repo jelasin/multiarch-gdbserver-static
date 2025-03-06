@@ -1,3 +1,3 @@
 # multiarch-gdbserver-static
 
-default version is 9.2.
+By default, gdb-9.2 version is used. Other versions are marked.
