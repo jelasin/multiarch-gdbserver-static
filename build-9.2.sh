@@ -1,6 +1,7 @@
 # 9.2 not support riscv
 
 sudo apt install gcc-arm-linux-gnueabi g++-arm-linux-gnueabi -y
+sudo apt install gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf -y
 sudo apt install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu -y
 
 sudo apt install gcc-mipsel-linux-gnu g++-mipsel-linux-gnu -y
