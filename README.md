@@ -23,6 +23,7 @@ sudo apt-get install autoconf automake autotools-dev curl python3 python3-pip py
 make && make install
 
 ```
+
 Other-toolchain
 ```sh
 sudo apt install gcc-arm-linux-gnueabi g++-arm-linux-gnueabi -y
@@ -46,4 +47,3 @@ sudo apt install gcc-sparc64-linux-gnu g++-sparc64-linux-gnu -y
 ```
 
 [musl-toolschain](https://musl.cc/)
-
