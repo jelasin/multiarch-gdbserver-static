@@ -1,6 +1,7 @@
 #!/bin/bash
 
 export PATH="/home/pwn/riscv/GNU/riscv32/bin:$PATH"
+
 export CC="riscv32-unknown-linux-gnu-gcc"
 export CXX="riscv32-unknown-linux-gnu-g++"
 
