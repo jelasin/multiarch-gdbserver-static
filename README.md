@@ -10,7 +10,7 @@ Building 9.2 was quite easy. However, you will encounter issues like
 
 I first saw discussions about this problem in version 10.1, and it still exists in the latest versions to this day.
 # multiarch-toolchain
-For ubuntu:
+**For ubuntu:**
 
 [riscv-gnu-toolchain](https://github.com/riscv-collab/riscv-gnu-toolchain)
 ```sh
