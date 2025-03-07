@@ -16,7 +16,7 @@ If you encounter the following error during compilation, please use [musl-gcc](h
 
 This situation usually occurs in higher version compilations.
 
-1.
+Error 1.
 ```text
 /usr/lib/gcc-cross/riscv64-linux-gnu/11/../../../../riscv64-linux-gnu/bin/ld: gdbreplay.o: in function `.L14':
 gdbreplay.cc:(.text+0x272): warning: Using 'getaddrinfo' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
@@ -32,7 +32,7 @@ linux-osdata.c:(.text+0x73c): warning: Using 'getpwuid_r' in statically linked a
 /usr/lib/gcc-cross/riscv64-linux-gnu/11/../../../../riscv64-linux-gnu/bin/ld: remote-utils.o: in function `.LEHB7':
 remote-utils.cc:(.text+0x54c): warning: Using 'getaddrinfo' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
 ```
-2.
+Error 2.
 ```text
 /usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/bin/ld: ../gnulib/import/libgnu.a(strerror_r.o): Relocations in generic ELF (EM: 243)
 /usr/lib/gcc-cross/aarch64-linux-gnu/11/../../../../aarch64-linux-gnu/bin/ld: ../gnulib/import/libgnu.a: error adding symbols: file in wrong format
@@ -61,4 +61,5 @@ make: *** Waiting for unfinished jobs....
 collect2: error: ld returned 1 exit status
 make: *** [Makefile:389: libinproctrace.so] Error 1
 ```
-
+Error 3.
+......
