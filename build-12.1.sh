@@ -1,11 +1,10 @@
 #!/bin/bash
 
-export PATH="/home/pwn/riscv/GNU/riscv32/bin:$PATH"
-export CC="riscv32-unknown-linux-gnu-gcc"
-export CXX="riscv32-unknown-linux-gnu-g++"
+export CC="riscv64-linux-gnu-gcc"
+export CXX="riscv64-linux-gnu-g++"
 
-MY_HOST="riscv32-linux-gnu"
-MY_TARGET="riscv32-linux-gnu"
+MY_HOST="riscv64-linux-gnu"
+MY_TARGET="riscv64-linux-gnu"
 
 build_dir=$(pwd)
 gnulib_dir=$build_dir/../gnulib
@@ -42,3 +41,4 @@ $gdbserver_dir/configure --host=$MY_HOST --target=$TARGET_CROSS \
 make -j$(nproc)
 
 echo "Compilation finished!"
+
