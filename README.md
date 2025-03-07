@@ -47,3 +47,5 @@ sudo apt install gcc-sparc64-linux-gnu g++-sparc64-linux-gnu -y
 ```
 
 [musl-toolschain](https://musl.cc/)
+
+[loongarch32/loogarch64](https://github.com/loongson/build-tools)
