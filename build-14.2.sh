@@ -1,11 +1,10 @@
 #!/bin/bash
 
-export PATH="/home/pwn/aarch/aarch64/aarch64-linux-musl-cross/bin:$PATH"
-export CC="aarch64-linux-musl-gcc"
-export CXX="aarch64-linux-musl-g++"
+export CC="riscv64-linux-gnu-gcc"
+export CXX="riscv64-linux-gnu-g++"
 
-MY_HOST="aarch64-linux-musl"
-MY_TARGET="aarch64-linux-musl"
+MY_HOST="riscv64-linux-gnu"
+MY_TARGET="riscv64-linux-gnu"
 
 build_dir=$(pwd)
 gnulib_dir=$build_dir/../gnulib
@@ -20,26 +19,25 @@ fi
 
 cd $gnulib_dir
 ./configure --host=$MY_HOST --target=$TARGET_CROSS \
-            CFLAGS="-static" CXXFLAGS="-static" LDFLAGS="-static"
+            CFLAGS="-static" CXXFLAGS="-static" LDFLAGS="-static -s"
 make -j$(nproc)
 
 cd $gdbsupport_dir
 ./configure --host=$MY_HOST --target=$TARGET_CROSS \
-            CFLAGS="-static" CXXFLAGS="-static" LDFLAGS="-static"
+            CFLAGS="-static" CXXFLAGS="-static" LDFLAGS="-static -s"
 make -j$(nproc)
 
 cd $libiberty_dir
 ./configure --host=$MY_HOST --target=$TARGET_CROSS \
-            CFLAGS="-static" CXXFLAGS="-static" LDFLAGS="-static"
+            CFLAGS="-static" CXXFLAGS="-static" LDFLAGS="-static -s"
 make -j$(nproc)
 
 cd $build_dir
 
 $gdbserver_dir/configure --host=$MY_HOST --target=$TARGET_CROSS \
             CFLAGS="-static" CXXFLAGS="-static" \
-            LDFLAGS="-static -L$library_path -L$gnulib_dir -L$gdbsupport_dir"
+            LDFLAGS="-static -s -L$gnulib_dir -L$gdbsupport_dir -L$libiberty_dir"
 
 make -j$(nproc)
 
 echo "Compilation finished!"
-
