@@ -12,7 +12,7 @@ I first saw discussions about this problem in version 10.1, and it still exists 
 
 ****
 
-If you encounter the following error during compilation, please use [musl-gcc](https://musl.cc/).
+If you encounter the following error during compilation, please use [musl-gcc](https://musl.cc/) or uClibc-ng.
 
 This situation usually occurs in higher version compilations.
 
