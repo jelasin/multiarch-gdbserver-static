@@ -44,3 +44,6 @@ sudo apt install gcc-alpha-linux-gnu g++-alpha-linux-gnu -y
 sudo apt install gcc-s390x-linux-gnu g++-s390x-linux-gnu -y
 sudo apt install gcc-sparc64-linux-gnu g++-sparc64-linux-gnu -y
 ```
+
+[musl-toolschain](musl.cc)
+
