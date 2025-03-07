@@ -4,8 +4,8 @@ export PATH="/home/pwn/aarch/aarch64/aarch64-linux-musl-cross/bin:$PATH"
 export CC="aarch64-linux-musl-gcc"
 export CXX="aarch64-linux-musl-g++"
 
-MY_HOST="aarch64-linux-gnu"
-MY_TARGET="aarch64-linux-gnu"
+MY_HOST="aarch64-linux-musl"
+MY_TARGET="aarch64-linux-musl"
 
 build_dir=$(pwd)
 gnulib_dir=$build_dir/../gnulib
