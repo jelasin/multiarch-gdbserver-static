@@ -2,7 +2,9 @@
 
 I encountered various problems when cross-compiling the static multiarch-gdbserver-static, so I'm putting the compiled multiarch-gdbserver-static here.
 
-Building 9.2 was quite easy. However, you will encounter issues like 
+Building 9.2 was quite easy. 
+
+However, with other version, you will encounter issues like 
 - `make: *** No rule to make target '../gnulib/import/libgnu.a', needed by 'gdbserver'.  Stop.`.
 
 - `make: *** No rule to make target '../libiberty/libiberty.a', needed by 'gdbserver'.  Stop.`.
